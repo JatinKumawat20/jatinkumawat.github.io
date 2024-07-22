@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 nav{
@@ -36,7 +37,7 @@ nav ul li a{
 nav ul li a:hover{
     background: white;
     color: #1a8fe5;
-    transition: background 1.2s linear;
+    transition: all 0.8s linear;
 }
 
 .divBody{
@@ -50,20 +51,26 @@ nav ul li a:hover{
     text-align: center;
     padding: 4px;
     margin-bottom: 5px;
+    border: 2px #000000 solid;
+    background-color: #1a8fe5;
+    color: white;
+    border-radius: 5px;
+    cursor: pointers;
 }
 
 .pricingBody{
-    display: flex;
+    display: none;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 15px;
 }
 
 .pricingBody section{
     border: 2px solid black;
     border-radius: 50%;
-    max-width: 300px;
-    min-width: 230px;
-    height: 180px;
+    max-width: 350px;
+    min-width: 280px;
+    height: 230px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -73,7 +80,7 @@ nav ul li a:hover{
 .pricingBody section:hover{
     background-color: #1a8fe5;
     color: white;
-    transition: background-color 0.8s linear;
+    transition: all 0.8s linear;
 }
 
 .sectionHead{
@@ -82,7 +89,9 @@ nav ul li a:hover{
 }
 
 .divBodyContainer{
-    display: flex;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
@@ -133,4 +142,11 @@ nav ul li a:hover{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.accordianInput:checked~.divBodyContainer, .accordianInput:checked~.pricingBody{
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transition: all 9s linear;
 }

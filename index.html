@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MetaParking</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=1.0.1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.10/css/all.css">
 </head>
 <body>
     <nav>
@@ -22,7 +23,7 @@
     </div>
     <div>
         <div id="addEmployee" class="divBody">
-            <h2 class="boxHeading">Add Employee</h2>
+            <input type="checkbox" hidden class="accordianInput" name="accordian" id="accordian1"> <label for="accordian1"><h2 class="boxHeading">Add Employee</h2></label>
             <div class="divBodyContainer">
                 <div>
                     <img src="img/adduser.png" alt="">
@@ -50,7 +51,7 @@
             </div>
         </div>
         <div id="addVehicle" class="divBody">
-            <h2 class="boxHeading">Add Vehicle</h2>
+            <input type="checkbox" hidden class="accordianInput" name="accordian" id="accordian2"> <label for="accordian2"><h2 class="boxHeading">Add Vehicle</h2></label>
             <div class="divBodyContainer">
                 <div>
                     <img src="img/addVehicle.png" height="250" alt="">
@@ -81,15 +82,15 @@
             </div>
         </div>
         <div id="giveFeedback" class="divBody">
-            <h2 class="boxHeading">Get in touch</h2>
+            <input type="checkbox" hidden class="accordianInput" name="accordian" id="accordian3"> <label for="accordian3"><h2 class="boxHeading">Get in touch</h2></label>
             <div class="divBodyContainer">
                 <div class="text-center">
                     <h4>DON'T BE SHY</h4>
                     <p>Feel free to get in touch with us. We are always<br> available to solving your query.</p>
                     <div class="marginHeading">
                         <h5>Contact Links</h5>
-                        <a href="mailto:jatin.kumawat@metacube.com">Mail Us</a>
-                        <a href="tel:+917062039927">Phone Us</a>
+                        <a href="mailto:jatin.kumawat@metacube.com"><i class='fas fa-envelope' style='font-size:50px'></i></a>
+                        <a href="tel:+917062039927"><i class='fas fa-phone' style='font-size:50px'></i></a>
                     </div>
                 </div>
                 <div>
@@ -110,11 +111,12 @@
             </div>
         </div>
         <div id="pricing" class="divBody">
-            <h2 class="boxHeading">Pricing</h2>
+            <input type="checkbox" hidden class="accordianInput" name="accordian" id="accordian4"> <label for="accordian4"><h2 class="boxHeading">Pricing</h2></label>
             <div class="pricingBody">
                 <section>
                     <div>
                         <p class="sectionHead">CYCLE</p>
+                        <i class='fas fa-bicycle' style='font-size:50px'></i>
                         <p>$5 Daily</p>
                         <p>$100 Monthly</p>
                         <p>$500 Yearly</p>
@@ -123,6 +125,7 @@
                 <section>
                     <div>
                         <p class="sectionHead">MOTORCYCLE</p>
+                        <i class='fas fa-motorcycle' style='font-size:50px'></i>
                         <p>$10 Daily</p>
                         <p>$200 Monthly</p>
                         <p>$1000 Yearly</p>
@@ -131,6 +134,7 @@
                 <section>
                     <div>
                         <p class="sectionHead">FOUR WHEELERS</p>
+                        <i class='fas fa-car' style='font-size:50px'></i>
                         <p>$20 Daily</p>
                         <p>$500 Monthly</p>
                         <p>$3500 Yearly</p>
